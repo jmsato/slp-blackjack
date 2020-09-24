@@ -1,2 +1,2 @@
 # slp-blackjack
-For sheCodes 2020 semester long project.
+For Cal Poly Pomona sheCodes 2020 semester long project.
