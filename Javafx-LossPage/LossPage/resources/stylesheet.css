@@ -1,0 +1,16 @@
+@font-face {
+	font-family: game;
+	src: url('font/PressStart2P-Regular.ttf');
+}
+
+.button {
+	-fx-font-family: "Press Start 2P";
+	-fx-font-size: 25;
+}
+
+button:hover {
+	
+	-fx-hovered-background: #39ff14;
+	-fx-transition-delay: 1s;
+}
+
