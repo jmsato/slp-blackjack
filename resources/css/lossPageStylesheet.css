@@ -1,6 +1,6 @@
 @font-face {
 	font-family: game;
-	src: url('font/PressStart2P-Regular.ttf');
+	src: url('../fonts/PressStart2P-Regular.ttf');
 }
 
 .button {
