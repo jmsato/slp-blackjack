@@ -1,5 +1,6 @@
+package application;
 /**
- * The CardBlackJack program is used to test the Card Class and DeckOfCards Class.
+* The CardBlackJack program is used to test the Card Class and DeckOfCards Class.
 */
 import javafx.application.Application;
 import javafx.stage.Stage;

@@ -1,3 +1,5 @@
+package application;
+
 /**
  * The DeckOfCards class is used to create a deck of card objects and display the back of card image.
  */
@@ -21,7 +23,7 @@ public class DeckOfCards {
         this.deck = new ArrayList<Card>();
         this.colorBackOfCardImage = colorBackOfCardImage;
         String fileName = "Back "+ colorBackOfCardImage +" 1.png";
-        backOfCardImage = new Image("file:C:/Users/acer/Blackjack/CardImage/"+ fileName);
+        backOfCardImage = new Image("file:resources/images/cards/"+ fileName);
         displayBackOfCardImage = new Scene(new HBox(new ImageView(backOfCardImage)));
     }
     public ArrayList<Card> getDeck(){

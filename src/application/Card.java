@@ -1,3 +1,5 @@
+package application;
+
 /**
  * The Card class is used to create card objects.
  */
@@ -22,7 +24,7 @@ public class Card {
         this.faceName = faceName;
         this.value = getValue();
         String fileName = suit + " " + getValueToDisplayCard() + ".png";
-        imageOfCard = new Image("file:C:/Users/acer/Blackjack/CardImage/"+ fileName);
+        imageOfCard = new Image("file:resources/images/cards/"+ fileName);
         displayCard = new Scene(new HBox(new ImageView(imageOfCard)));
     }
     public Suit getSuit() {
@@ -35,6 +37,7 @@ public class Card {
             switch (faceName) {
                 case ACE:
                     return value = getValueOfAce(true); // supposed to be linked with other class
+                case TWO: return value = 2;
                 case THREE: return value = 3;
                 case FOUR: return value = 4;
                 case FIVE: return value = 5;
