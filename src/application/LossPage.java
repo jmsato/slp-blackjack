@@ -26,7 +26,7 @@ import javafx.scene.control.Button;
 
 
 
-public class LossPage2 extends Application
+public class LossPage extends Application
 {
 
 	@Override
