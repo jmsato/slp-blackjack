@@ -1,0 +1,17 @@
+@font-face {
+	font-family: Goldman;
+	src: url('../fonts/Goldman-Bold.ttf');
+}
+
+.label {
+	-fx-font-family: Goldman;
+	-fx-font-size:50pt;
+	-fx-font-style: bold;
+} 
+.button {
+	-fx-font-family: Goldman;
+	-fx-background-color: floralwhite;
+	-fx-font-size: 12pt;
+	-fx-min-width: 3;
+	-fx-min-height:10;
+}
