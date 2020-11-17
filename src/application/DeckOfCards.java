@@ -51,6 +51,10 @@ public class DeckOfCards {
     public void shuffleCards(){
         Collections.shuffle(deck);
     }
+    public Card drawCard() {
+    	Card card = deck.remove(0);
+    	return card;
+    }
     public String toString (){
         String printList = "";
         int i = 1;

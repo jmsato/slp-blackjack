@@ -76,9 +76,9 @@ public class Card {
             case EIGHT: return value = 8;
             case NINE: return value = 9;
             case TEN: return value = 10;
-            case JACK: return value = 11;
-            case QUEEN: return value = 12;
-            case KING: return value = 13;
+            case JACK: return value = 10;
+            case QUEEN: return value = 10;
+            case KING: return value = 10;
             default: return 0;
         }
     }

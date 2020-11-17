@@ -11,7 +11,6 @@ public class Player{
 
 	public Player(ArrayList<Card> cardsForPlayer){
 		playerTotal = 0;
-		dealerTotal = dealer.getTotal(); //change to dealer's method
 		outcome = false;
 		playerCards = cardsForPlayer;
 		count = 0;
@@ -34,7 +33,7 @@ public class Player{
 		return playerTotal;
 	}
 	//checks if the player player is able to draw another card
-	public boolean draw(Card card){
+	public boolean draw(){
 		if(playerTotal<21){
 			return true;
 		}
@@ -43,7 +42,7 @@ public class Player{
 	//returns whether or not the player has more points that 
 	// the dealer or has a total of 21 points
 	public boolean outcome(){
-		if(playerTotal == 21 || playerTotal > dealerTotal){
+		if((playerTotal == 21 || playerTotal > dealerTotal) && playerTotal <=21){
 			return true;
 		}
 		return false;
@@ -61,5 +60,15 @@ public class Player{
 	public Card revealHandPlayer(){
 		count++;
 		return playerCards.get(count-1);
+	}
+	
+	//Get the hand of the player
+	public ArrayList<Card> getPlayerHand() {
+		return playerCards;
+	}
+	
+	//Set the dealer's total
+	public void setDealerTotal(int dealerTot) {
+		dealerTotal = dealerTot;
 	}
 }
